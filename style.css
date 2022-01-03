@@ -18,6 +18,7 @@ html{
 
 .cabecalho {
     background: url(./img/doutores.svg);
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     overflow-y: hidden;
@@ -65,6 +66,7 @@ html{
 }
 
 .gqn {
+    margin-top: 1.5rem;
     padding: 10px;
     border-radius: 5px;
     height: 40px;
@@ -159,10 +161,10 @@ html{
 .form input {
     border-radius: 5px;
     border: 1px solid #9797975e;
-    width: 250px;
-    height: 30px;
-    padding: 15px;
-    margin-left: 40px;
+    width: 25.0rem;
+    height: 3.0rem;
+    padding: 1.5rem;
+    margin-left: 4.0rem;
 }
 
 .book-a {
@@ -608,6 +610,16 @@ html{
 
 /* responsividade */
 
+@media (max-width: 920px){
+    .gqn::after {
+        content: '';
+    }
+    .menu {
+        margin: 0 auto;
+    }
+}
+
+
 @media (max-width: 768px) {
     html {
         font-size: 50%;
@@ -619,5 +631,33 @@ html{
         font-size: 1.4rem;
         height: 4.2rem;
         width: 20.4rem;
+    }
+    .menu-item {
+        width: 9.0rem;
+    }
+    .logo{
+        width: 20.0rem;
+    }
+    .menu {
+        display: flex;
+        margin: 0;
+    }
+    .buttons {
+        gap: 10;
+        margin-right: 1rem;
+    }
+    .form {
+        margin-top: 20rem;
+        background-color: transparent;
+        border: 1px solid #ccc;
+    }
+    .form span {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 40px;
+    }
+    .form-title {
+        color: #fff;
     }
 }
