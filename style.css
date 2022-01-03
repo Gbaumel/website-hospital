@@ -950,7 +950,7 @@ html{
 
 }
 
-@media (max-width: 375px){
+@media (max-width: 490px){
     .menu {
         width: 100%;
     }
@@ -964,18 +964,21 @@ html{
 
     .feedback-wrap {
         width: 94%;
+        margin: 0 auto;
     }
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 375px){
     .leading-ech{
         width: 100%;
         height: 100%;
     }
-
+    .container {
+        width: 95%;
+    }
     .feedback-wrap {
-        width: 80%;
+        width: 85%;
         height: 100%;
     }
 
