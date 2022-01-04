@@ -15,6 +15,9 @@ html{
     font-size: 62.5%;
 }
 
+.button-form {
+    display: none;
+}
 
 .cabecalho {
     background: url(./img/doutores.svg);
@@ -644,7 +647,7 @@ html{
 
 @media (max-width: 920px){
     .gqn::after {
-        content: '';
+        display: none;
     }
     .menu {
         margin: 0 auto;
@@ -957,16 +960,16 @@ html{
     .menu-item{
         font-size: 1.5rem;
     }
-
+    
     .buttons {
         width: 100%;
     }
-
+    
     .feedback-wrap {
         width: 94%;
         margin: 0 auto;
     }
-
+    
 }
 
 @media (max-width: 375px){
@@ -981,16 +984,81 @@ html{
         width: 85%;
         height: 100%;
     }
-
+    
     .free,
     .standard,
     .premium{
         width: 100%;
     }
-
+    
     .subscribe-wrap{
         width: 100%;
         font-size: 1rem;
     }
+    
+}
+
+
+@media (max-width: 280px) {
+
+    .menu-item {
+        font-size: 1.2rem;
+    }
+}
+
+/* altura responsiva */
+
+@media (max-height:745px) {
+    .form {
+        margin-top: -20rem;
+        display: none;
+    }
+    
+    .form input {
+        font-weight: 700;
+    }
+    .open-form{
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        height: 40px;
+        width: 80px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        
+    }
+    
+    .button-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6rem;
+        cursor: pointer;
+    }
+    
+    .gqn {
+        width: 20rem;
+        height: 5rem;
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+    
+    .gqn::after {
+        display: none;
+    }
+    
+    .on {
+        background-color: rgb(41, 119, 111);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        transition: .1s ease;
+        left: 0;
+    }
+
 
 }
